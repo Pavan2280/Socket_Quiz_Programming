@@ -33,7 +33,7 @@ In the world of computer networking, a "socket" is essentially an endpoint for s
 <summary>Procedure</summary>
 <br>
   
-- Client Connections:
+1) Client Connections:
   Clients should connect to the server using a suitable client application or script.
   The server will wait for a specific number of clients to join the quiz before proceeding. The number of clients required is determined by user input.
   Quiz Gameplay:
@@ -42,13 +42,13 @@ In the world of computer networking, a "socket" is essentially an endpoint for s
   Each client will be presented with three questions one by one.
   Clients should provide their answers within a specified time limit.
 
-- Scoring:
+2) Scoring:
 
   After each client has answered all three questions, the server calculates their scores.
   Scores are based on the correctness and speed of responses.
   Clients receive their scores after completing the quiz.
 
-- Connection Closure:
+3) Connection Closure:
   After the quiz is completed for all clients, or when a client disconnects, the server will close the connection.
   Clients can no longer participate in the quiz or receive scores.
 </details>
